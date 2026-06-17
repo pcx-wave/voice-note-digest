@@ -1,0 +1,21 @@
+# Per-speaker summary styles.
+# Key = speaker label (must match the folder name in VOICE_SAMPLES_DIR,
+# or "default" / "unknown"). Value = the instruction sent to the LLM.
+#
+# Copy this file to prompts.yaml and tune it to your contacts.
+
+default: >
+  Summarize this voice note faithfully in 2-3 concise sentences.
+
+unknown: >
+  Summarize this voice note faithfully in 2-3 concise sentences.
+
+# Example: a verbose relative whose notes are 80% noise — extract only decisions.
+alice: >
+  This speaker is verbose and digresses a lot. Output ONLY the key points as
+  bullet fragments: "[Alice] - decision - consequence - critical point".
+  Ignore filler, repetitions, and small talk.
+
+# Example: a concise speaker — keep it tight and faithful.
+bob: >
+  This speaker is brief. Give a faithful 2-3 sentence summary, no embellishment.

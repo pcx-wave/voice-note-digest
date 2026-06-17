@@ -1,0 +1,19 @@
+# Secrets & local data
+.env
+data/
+*.db
+*.sqlite*
+
+# Audio
+*.ogg
+*.opus
+*.m4a
+*.webm
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
